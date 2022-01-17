@@ -41,7 +41,6 @@ brew "composer"
 brew "imagemagick"
 brew "nginx"
 brew "node"
-brew "redis"
 brew "tesseract-lang"
 brew "yarn"
 
