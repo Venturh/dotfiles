@@ -41,6 +41,7 @@ brew "composer"
 brew "imagemagick"
 brew "nginx"
 brew "node"
+brew "spaceship"
 brew "yarn"
 
 # Apps
