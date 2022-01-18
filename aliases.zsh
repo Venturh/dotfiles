@@ -1,5 +1,5 @@
 # Shortcuts
-alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
+alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias reloadshell="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
@@ -23,10 +23,6 @@ alias cfresh="rm -rf vendor/ composer.lock && composer i"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
-
-# Book-n-Drive
-alias bnd="curl https://web.book-n-drive.de/api/vehicles\?bounding_box\=8.64213493564867,49.84915750937637,8.644833237917652,49.85081952465208 -s | jq 'length'"
-
 
 # Git
 alias gst="git status"
