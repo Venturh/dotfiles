@@ -1,17 +1,15 @@
 # Shortcuts
+alias zshconfig="code ~/.zshrc"
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
-alias reloadshell="source $HOME/.zshrc"
-alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
-alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
-alias sites="cd $HOME/Sites"
-alias clickbar="cd $HOME/Sites/clickbar"
+alias sites="cd $HOME/sites"
+alias work="cd $HOME/sites/work"
+alias self="cd $HOME/sites/self"
 
 # Laravel
 alias a="php artisan"
@@ -23,6 +21,10 @@ alias cfresh="rm -rf vendor/ composer.lock && composer i"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
+
+alias p="pnpm"
+alias pint="./vendor/bin/pint"
+alias stan="./vendor/bin/phpstan analyse"
 
 # Git
 alias gst="git status"

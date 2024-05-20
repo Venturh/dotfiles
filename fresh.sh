@@ -37,10 +37,11 @@ $HOME/.composer/vendor/bin/valet install
 
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
-mkdir $HOME/Sites
+mkdir $HOME/sites
 
 # Create sites subdirectories
-mkdir $HOME/Sites/clickbar
+mkdir $HOME/sites/work
+mkdir $HOME/sites/self
 
 # Clone Github repositories
 ./clone.sh

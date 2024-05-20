@@ -1,11 +1,10 @@
 # Taps
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
-tap "homebrew/services"
-tap "stripe/stripe-cli"
+tap 'homebrew/cask-fonts'
+tap 'homebrew/cask-versions'
+tap 'homebrew/bundle'
+tap 'oven-sh/bun'
+tap 'withgraphite/tap'
+tap 'shivammathur/extensions'
 
 # Binaries
 brew "awscli"
@@ -34,47 +33,62 @@ brew "svgo"
 brew "gifsicle"
 
 # Development
-brew "shivammathur/php/php"
-brew "shivammathur/php/php@8.0"
-brew "shivammathur/php/php@7.4"
-brew "composer"
-brew "imagemagick"
-brew "nginx"
-brew "node"
-brew "spaceship"
-brew "yarn"
+brew 'php@8.3'
+brew 'shivammathur/extensions/xdebug@8.3'
+brew 'shivammathur/extensions/redis@8.3'
+brew 'shivammathur/extensions/imagick@8.3'
+brew 'shivammathur/extensions/swoole@8.3'
+
+brew 'php@8.2'
+brew 'shivammathur/extensions/xdebug@8.2'
+brew 'shivammathur/extensions/redis@8.2'
+brew 'shivammathur/extensions/imagick@8.2'
+brew 'shivammathur/extensions/swoole@8.2'
+
+brew 'php@8.1'
+brew 'shivammathur/extensions/xdebug@8.1'
+brew 'shivammathur/extensions/redis@8.1'
+brew 'shivammathur/extensions/imagick@8.1'
+brew 'shivammathur/extensions/swoole@8.1'
+
+brew 'composer'
+brew 'node'
+brew 'deno'
+brew 'oven-sh/bun/bun'
+brew 'yarn'
+brew 'pnpm'
+brew 'go'
+brew 'rustup'
+brew 'cargo-make'
 
 # Apps
 cask "1password"
 cask "1password-cli"
-cask "brave-browser"
-cask "caffeine"
+cask "arc"
 cask "discord"
 cask "docker"
 cask "figma"
-cask "firefox-developer-edition"
-cask "freedom"
 cask "google-chrome"
-cask "homebrew/cask/hey"
 cask "imageoptim"
 cask "insomnia"
 cask "iterm2"
 cask "karabiner-elements"
+cask "linear-linear"
 cask "microsoft-office"
 cask "notion"
-cask "quicklook-csv"
-cask "quicklook-json"
-casl "rectangle"
+cask "nvidia-geforce-now"
+cask "orbstack"
+cask "raycast"
 cask "spotify"
 cask "tableplus"
-cask "telegram-desktop"
-cask "tinkerwell"
-cask "vlc"
+cask "telegram"
+cask "visual-studio-code"
 cask "whatsapp"
 cask "zoom"
 
 # Fonts
 cask "font-jetbrains-mono"
+cask 'font-inter'
 cask "font-lato"
 cask "font-montserrat"
 cask "font-open-sans"
@@ -86,10 +100,5 @@ cask "font-source-sans-pro"
 cask "font-source-serif-pro"
 
 # Mac App Store
-mas "GarageBand", id: 682658836
-mas "Harvest", id: 506189836
-mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
 mas "Xcode", id: 497799835

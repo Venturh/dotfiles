@@ -3,6 +3,7 @@
 echo "Cloning repositories..."
 
 SITES=$HOME/Sites
-CLICKBAR=$SITES/clickbar
+WORK=$SITES/work
 
 # Personal
+SELF=$SITES/self
